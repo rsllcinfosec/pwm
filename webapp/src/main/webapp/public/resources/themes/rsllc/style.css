@@ -1,0 +1,163 @@
+/*!
+ * Password Management Servlets (PWM)
+ * http://www.pwm-project.org
+ *
+ * Copyright (c) 2006-2009 Novell, Inc.
+ * Copyright (c) 2009-2020 The PWM Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+#wrapper {
+  background-image: url("background-image.png");
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-size: cover;
+  filter: grayscale(0.4);
+}
+
+#header {
+  width: 100%;
+  height: 70px;
+  margin: 0;
+  background: linear-gradient(to bottom, #ffffff00, #a3a2ab00);
+}
+
+#header-company-logo {
+  position: relative;
+  float: left;
+  background-image: url("rsllc-logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 10px;
+  left: 10px;
+  width: 150px;
+  height: 60px;
+  z-index: 1;
+}
+
+#header-center-left {
+  float: none !important;
+  max-width: none !important;
+  text-align: center;
+}
+
+div#header-page {
+  display: none;
+}
+
+#header-title {
+  font-family: Trebuchet MS, sans-serif;
+  color: #272262;
+  padding-top: 22px;
+  margin-left: 32px;
+  font-size: 22px;
+}
+
+#header-center-right {
+  top: 17px;
+}
+
+#centerbody.tile-centerbody {
+  box-shadow: 0 9px 0 0 white, 0 -9px 0 0 white, 9px 0 12px -4px #e4e4e4,
+    -9px 0 12px -4px #e4e4e4;
+  background-color: white;
+  border-radius: 4px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+#rsllc-footer-content {
+  font-family: Trebuchet MS, sans-serif;
+  padding: 25px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 9px 0 0 white, 0 -9px 0 0 white, 9px 0 12px -4px #e4e4e4,
+    -9px 0 12px -4px #e4e4e4;
+  line-height: 2.2em;
+  width: 48%;
+  min-width: 150px;
+}
+
+#rsllc-footer-content p {
+  font-size: 12px;
+  color: #808080;
+}
+
+.push {
+  margin-top: 40px;
+  height: max-content;
+  margin-bottom: 20px;
+}
+
+div#rsllc-footer-content > :first-child {
+  font-size: 16px;
+  font-weight: bold;
+  color: #272262;
+}
+
+.pwm-icon {
+  color: #272262;
+}
+
+.tile-image {
+  color: #272262;
+}
+
+.tile {
+  border: 1px solid #272262;
+  border-radius: 6px;
+}
+.tile:hover {
+  border: 2px dashed #622252;
+  border-radius: 6px;
+  background-color: #e9dddd;
+}
+
+.tile-title {
+  color: #272262;
+}
+
+.tile-subtitle {
+  line-height: 17px;
+  font-weight: bold;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* IE10+ CSS styles go here */
+  #header {
+    background: none;
+  }
+
+  #wrapper {
+    display: block;
+    overflow: hidden;
+  }
+  
+  #rsllc-footer-content {
+    box-shadow: none;
+  }
+
+  #centerbody.tile-centerbody {
+    box-shadow: none;
+  }
+
+}
+
+/*@media only screen and (max-width: 600px) {
+  #rsllc-logo {
+    width: auto;
+    padding-left: 10px;
+  }
+}
+*/
